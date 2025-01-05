@@ -1,77 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="icon" href="image/sud.jpeg" type="image/x-icon">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudeyee</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-        }
-        h1 {
-            color: #ff69b4; /* Pembe */
-        }
-        h2 {
-            color: #ff0000; /* Kırmızı */
-        }
-        h3 {
-            color: #ff0000; /* Kırmızı */
-        }
-        p {
-            margin: 20px 0;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-    </style>
-</head>
-<body>
-    <audio controls autoplay>
-        <source src="sound/tomp3.cc - Ezhel  Bazen feat Emel.mp3" type="audio/mpeg">
-    </audio>
-    <script>
-         // Tarayıcı sesin otomatik çalmasını engelliyorsa, bu JavaScript kodunu kullanabilirsiniz.
-         document.addEventListener('DOMContentLoaded', function() {
-            var audio = document.querySelector('audio');
-            audio.play();
-        });
-    </script>
-
-    <header>
-        <h1>Sude'nin Özel Sayfası</h1>
-    </header>
-
-    <section>
-        <h2>Ezhel-Bazen</h2>
-        <h3>Sana zahmet şarkıyı oynatırmısınn</h3>
-       
-
-    <section>
-        <h2>❤‍🔥</h2>
-        <img src="image/sud.jpeg" alt="Sude Fotoğraf 1">
-        <p>Bu fotoğrafta Sude'nin güzel bir anısını paylaşıyoruz.</p>
-
-        <img src="image/sude2.jpeg" alt="Sude Fotoğraf 2">
-        <p>Bu da başka bir güzel anı!</p>
-        <h1>Devam ediozz</h1>
-        <img src="image/kedi.jpeg" alt="Sude Fotograf 2">
-        <p>Buda güzelmişş</p>
-        <img src="image/sude.jpeg" alt="Sude Fotografı">
-    </section>
-   <h1>İsteğine Bağlı Başka Şeylerde Koyabilirim</h1>
-   <h2>Ama Şimdilik Bu Kadar💅🏻</h2>
-
-    <footer>
-        <p>&copy; 2023 Sude'nin Özel Sayfası</p>
-        <h1><p>&copy; BY TQ.Teroxta</p></h1>
-    </footer>
-
-</body>
+  <head>
+    <link rel="icon" href="sud.jpeg" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sude İçin</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Signika+Negative:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="player">
+        <div class="player-top">
+          <button class="player-btn" type="button">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <span>Sude için 3 şarkı</span>
+          <button class="player-btn" type="button">
+            <i class="fa-solid fa-ellipsis"></i>
+          </button>
+        </div>
+        <div class="player-body">
+          <div class="current-song">
+            <div class="cover">
+              <span>Berat</span>
+              <span>Tek Başına 2.0</span>
+            </div>
+          </div>
+        </div>
+        <div class="song-info">
+          <div class="song-details">
+            <span class="song-name">Tek Başına 2.0</span>
+            <span class="song-artist">Berat</span>
+          </div>
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="song-duration">
+          <div class="song-time">
+            <div class="song-progress">
+              <audio src="music/Tek Başına 2.0.mp3" class="audio"></audio>
+            </div>
+          </div>
+          <div class="time">
+            <span>0:00</span>
+            <span>0:00</span>
+          </div>
+        </div>
+        <div class="controls">
+          <button class="player-btn" type="button">
+            <i class="fa-solid fa-shuffle"></i>
+          </button>
+          <button class="player-btn prev-btn" type="button">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button class="player-btn play-pause" type="button">
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <button class="player-btn next-btn" type="button">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+          <button class="player-btn" type="button">
+            <i class="fa-solid fa-repeat"></i>
+          </button>
+        </div>
+        <div class="player-footer">
+          <i class="fa-solid fa-music"></i>
+          <span> <footer>
+            <p>&copy; 2023-2025 Sude'nin Özel Sayfası</p>
+            <h1><p>&copy; BY  B.</p></h1>
+        </footer></span>
+          <i class="fa-solid fa-list"></i>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
